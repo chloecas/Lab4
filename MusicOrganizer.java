@@ -5,7 +5,46 @@ import java.util.ArrayList;
  * 
  * @author David J. Barnes and Michael Kölling
  * @version 2016.02.29
+ * 
+ * Lab 4 Questions:
+ * 28. for(String track: tracks) {
+ *         loop body
+ *      }
+ * 29. boolean found = false;
+ *     while(not found) {
+ *         if(the keys are in the next place) {
+ *             not found = false;
+ *             }
+ *      }
+ * 30. int index = 10;
+ *     while(index <=95) {
+ *         System.out.println(index);
+ *         index= index + 5;
+ *      }
+ *     
+ * 31. int n = 10, sum = 0, i = 1;
+ *     while(i<=n) {
+ *        sum= sum +i;
+ *        i= i+1;
+ *        System.out.println(sum);
+ *     }
+ *      
+ * 32. public int sum(int a, int b)
+ *     {
+ *         int sum = 0;
+ *         while(a<=b) {
+ *             sum = sum + a;
+ *             a = a + 1;
+ *      }
+ * 33. public boolean isPrime(int n)
+ *          while(int i = 2 && <= n-1) {
+ *               if(n % i == 0);
+ *                  return false;
+ *                  i = i+1;
+ *      }
+ *         
  */
+
 public class MusicOrganizer
 {
     // An ArrayList for storing the file names of music files.
@@ -122,10 +161,10 @@ public class MusicOrganizer
         }
     }
 
-    public void playSample(String searchString)
+    public void playSample(String BlindLemonJefferson)
     {
        for(String filename: files) {
-           if(filename.contains(searchString)) {
+           if(filename.contains(BlindLemonJefferson)) {
                player.playSample(filename);
            }
        }
